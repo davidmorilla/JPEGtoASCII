@@ -50,7 +50,7 @@ void read_jpeg_file(char *filename) {
         // Read a single row
         jpeg_read_scanlines(&cinfo, &row_pointer, 1);
 
-        // Process the row (for example, print the red value of each pixel)
+        // Process the row 
         for (int i = 0; i < width * num_channels; i += num_channels) {
             unsigned char R = row_pointer[i];
             unsigned char G = row_pointer[i + 1];
