@@ -12,10 +12,17 @@ This C program converts JPEG images to ASCII art using brightness values of pixe
 - **Input Validation**: Checks that the provided filename has a `.jpg` extension before processing.
 
 ## Usage:
-Compile the program and run it from the command line by providing the JPEG file name as an argument:
-`./ascii_art input.jpg`
+Compile the program using:
+
+`gcc ascii_art.c -o ascii_art -ljpeg`
+
+After compiling, run it from the command line by providing the JPEG file name as an argument:
+
+`./ascii_art input/name.jpg`
+
 This will print the output in the console.
 If you´d rather save the output in a file, you can run this command instead:
-`./ascii_art input.jpg > output.txt`
+
+`./ascii_art input/name.jpg > output/name.txt`
 
 
